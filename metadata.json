@@ -1,0 +1,6 @@
+{
+  "name": "AI Smart Civic Services",
+  "description": "An AI-powered civic complaint classification, prioritization, routing, and management platform for citizens and municipal service teams.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

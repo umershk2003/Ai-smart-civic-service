@@ -1,0 +1,748 @@
+{
+  "complaints": [
+    {
+      "id": "cmp-001",
+      "trackingId": "CIV-2026-8091",
+      "title": "Major water pipe burst flooding Main Street market area",
+      "description": "A 12-inch underground main water line has ruptured near Civic Center, Gulshan-e-Iqbal. Clean drinking water is gushing out rapidly, flooding street vendors and creating traffic gridlock. Water pressure in nearby residential blocks has dropped completely.",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Muhammad Imran",
+      "citizenContact": "+92 300 2345678",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-east",
+        "tehsilId": "gulshan",
+        "municipalityId": "karachi-mc-gulshan",
+        "wardId": "karachi-w6",
+        "ward": "Ward 6 – Gulshan-e-Iqbal",
+        "area": "Gulshan-e-Iqbal Block 6",
+        "address": "Main University Road, near Civic Center",
+        "landmark": "Near Civic Center"
+      },
+      "category": "Water & Leakage",
+      "subcategory": "Pipe Burst",
+      "assignedDepartment": "Water & Sanitation Authority",
+      "assignedOfficer": "Officer Sana Malik",
+      "supervisorName": "Supervisor Maryam Farooq",
+      "priority": "Critical",
+      "priorityScore": 95,
+      "priorityReasoning": "High volume drinking water loss affecting commercial zone and entire residential sector water pressure. Imminent property damage risk.",
+      "status": "In Progress",
+      "summary": "Ruptured 12\" main water conduit causing commercial flooding & residential pressure outage.",
+      "recommendedActions": [
+        "Shut off primary isolator valve at main junction",
+        "Deploy emergency dewatering pump vehicle",
+        "Issue local boil water alert as precautionary measure"
+      ],
+      "estimatedSLAHours": 6,
+      "imageAnalysis": "Severe high-pressure water plume detected overflowing asphalt pavement, standing water depth approx 6 inches.",
+      "detectedKeywords": [
+        "pipe burst",
+        "flooding",
+        "drinking water",
+        "no pressure",
+        "traffic block"
+      ],
+      "createdAt": "2026-08-10T13:48:31.605Z",
+      "updatedAt": "2026-08-10T17:18:31.605Z",
+      "needsHumanReview": false,
+      "aiClassification": {
+        "category": "Water & Leakage",
+        "subcategory": "Pipe Burst",
+        "department": "Water & Sanitation Authority",
+        "priority": "Critical",
+        "priorityScore": 95,
+        "slaHours": 6,
+        "confidence": 96,
+        "reason": "Large visible water discharge from a municipal pipe in commercial sector.",
+        "needsHumanReview": false
+      },
+      "auditHistory": [
+        {
+          "id": "aud-001",
+          "user": "AI Engine",
+          "role": "super_admin",
+          "action": "AI Auto-Classified",
+          "ticketId": "CIV-2026-8091",
+          "newValue": "Category: Water & Leakage (96% Confidence)",
+          "timestamp": "2026-08-10T13:48:31.605Z"
+        },
+        {
+          "id": "aud-002",
+          "user": "Supervisor Maryam Farooq",
+          "role": "supervisor",
+          "action": "Assigned Officer",
+          "ticketId": "CIV-2026-8091",
+          "newValue": "Officer Sana Malik",
+          "timestamp": "2026-08-10T14:18:31.605Z"
+        }
+      ]
+    },
+    {
+      "id": "cmp-002",
+      "trackingId": "CIV-2026-8092",
+      "title": "Deep hazardous pothole on Shahrah-e-Faisal service road",
+      "description": "A massive 3-foot wide, 8-inch deep pothole has opened up after heavy monsoon rains. Two motorbikes have already lost control this morning. Exposed gravel and jagged asphalt edges present severe risk during night time due to poor lighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Fatima Noor",
+      "citizenContact": "+92 321 9876543",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-east",
+        "tehsilId": "gulberg",
+        "municipalityId": "karachi-mc-gulberg",
+        "wardId": "karachi-w8",
+        "ward": "Ward 8 – Gulberg",
+        "area": "Gulberg Chowrangi",
+        "address": "Shahrah-e-Faisal Service Road, near Gulberg Chowrangi",
+        "landmark": "Near Total petrol station"
+      },
+      "category": "Roads & Potholes",
+      "subcategory": "Pothole",
+      "assignedDepartment": "Department of Public Works",
+      "assignedOfficer": "Officer Imran Shahid",
+      "supervisorName": "Supervisor Ahmed Khan",
+      "priority": "High",
+      "priorityScore": 82,
+      "priorityReasoning": "High-speed roadway hazard causing two-wheeler accidents and vehicular tire damage.",
+      "status": "Assigned",
+      "summary": "Deep 3ft pothole on high-speed service road causing vehicle accidents.",
+      "recommendedActions": [
+        "Place reflectorized warning cones immediately",
+        "Dispatch cold-mix asphalt quick-patch team",
+        "Inspect sub-base for structural soil erosion"
+      ],
+      "estimatedSLAHours": 24,
+      "imageAnalysis": "Asphalt surface depression with severe rim cracking, depth estimated ~7-9 inches.",
+      "detectedKeywords": [
+        "pothole",
+        "accident",
+        "asphalt",
+        "expressway",
+        "motorcycle hazard"
+      ],
+      "createdAt": "2026-08-09T23:48:31.605Z",
+      "updatedAt": "2026-08-10T15:48:31.605Z",
+      "needsHumanReview": false,
+      "aiClassification": {
+        "category": "Roads & Potholes",
+        "subcategory": "Pothole",
+        "department": "Department of Public Works",
+        "priority": "High",
+        "priorityScore": 82,
+        "slaHours": 24,
+        "confidence": 91,
+        "reason": "Deep road surface defect presenting hazard to vehicles.",
+        "needsHumanReview": false
+      }
+    },
+    {
+      "id": "cmp-003",
+      "trackingId": "CIV-2026-8093",
+      "title": "Overflowing community garbage dumpster attracting strays",
+      "description": "The municipal waste bin behind Green Park society in North Nazimabad has not been cleared in 4 days. Waste is spilling onto the public sidewalk, emitting foul odor and attracting stray animals and insects.",
+      "imageUrl": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Ali Raza",
+      "citizenContact": "+92 333 4567890",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-central",
+        "tehsilId": "north-nazimabad",
+        "municipalityId": "karachi-mc-nn",
+        "wardId": "karachi-w10",
+        "ward": "Ward 10 – North Nazimabad",
+        "area": "North Nazimabad Block B",
+        "address": "Behind Green Park Society, Block B",
+        "landmark": "Opposite Firdous Bakery"
+      },
+      "category": "Waste Management",
+      "subcategory": "Garbage Overflow",
+      "assignedDepartment": "Municipal Solid Waste Management",
+      "supervisorName": "Supervisor Ahmed Khan",
+      "priority": "Medium",
+      "priorityScore": 60,
+      "priorityReasoning": "Public health and sanitation hazard in high-density residential area, uncollected solid waste over 72h.",
+      "status": "Under Review",
+      "summary": "Overflowing residential dumpster overflowing onto sidewalk, sanitation risk.",
+      "recommendedActions": [
+        "Dispatch heavy hydraulic compactor truck",
+        "Disinfect dumpster perimeter with anti-microbial spray",
+        "Re-evaluate collection schedule for North Nazimabad route"
+      ],
+      "estimatedSLAHours": 48,
+      "imageAnalysis": "Overflowing 4-cubic-yard waste container with uncontained plastic bags spilling onto pedestrian walkway.",
+      "detectedKeywords": [
+        "garbage overflow",
+        "waste",
+        "foul odor",
+        "sidewalk blocked",
+        "sanitation"
+      ],
+      "createdAt": "2026-08-09T13:48:31.605Z",
+      "updatedAt": "2026-08-10T05:48:31.605Z",
+      "needsHumanReview": true,
+      "aiClassification": {
+        "category": "Parks & Greenery",
+        "subcategory": "Damaged Park",
+        "department": "Parks & Horticulture Department",
+        "priority": "Low",
+        "priorityScore": 40,
+        "slaHours": 72,
+        "confidence": 65,
+        "reason": "Low confidence detected due to green background elements in photo.",
+        "needsHumanReview": true
+      },
+      "categoryOverride": {
+        "originalCategory": "Parks & Greenery",
+        "originalSubcategory": "Damaged Park",
+        "finalCategory": "Waste Management",
+        "finalSubcategory": "Garbage Overflow",
+        "overrideUser": "Supervisor Ahmed Khan",
+        "overrideRole": "supervisor",
+        "overrideReason": "Photo shows overflowing waste bin behind housing complex, not park land.",
+        "overrideTimestamp": "2026-08-10T05:48:31.605Z"
+      }
+    },
+    {
+      "id": "cmp-004",
+      "trackingId": "CIV-2026-8094",
+      "title": "Sparking electrical transformer pole near primary school",
+      "description": "The utility pole transformer on Shahrah-e-Liaquat, Saddar is emitting loud buzzing sounds and intermittent sparks. Sparks are landing on nearby tree branches near a primary school.",
+      "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Sana Tariq",
+      "citizenContact": "+92 345 3217654",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-south",
+        "tehsilId": "saddar",
+        "municipalityId": "karachi-mc",
+        "wardId": "karachi-w1",
+        "ward": "Ward 1 – Saddar",
+        "area": "Saddar Bazaar",
+        "address": "Shahrah-e-Liaquat, opposite St. Jude School",
+        "landmark": "Opposite St. Jude Primary School"
+      },
+      "category": "Electricity",
+      "subcategory": "Electrical Hazard",
+      "assignedDepartment": "Electrical Engineering & Utilities",
+      "assignedOfficer": "Officer Bilal Ahmed",
+      "supervisorName": "Supervisor Ahmed Khan",
+      "priority": "Critical",
+      "priorityScore": 98,
+      "priorityReasoning": "Immediate electrical fire hazard and electrocution risk adjacent to primary school children zone.",
+      "status": "In Progress",
+      "summary": "Sparking transformer pole adjacent to primary school, high fire & safety risk.",
+      "recommendedActions": [
+        "Isolate local feeder circuit remotely",
+        "Dispatch emergency high-voltage emergency repair crew",
+        "Cordon off 50m radius around school entrance"
+      ],
+      "estimatedSLAHours": 6,
+      "imageAnalysis": "Transformer unit overhead with visible scorching marks and hanging branches near primary distribution lines.",
+      "detectedKeywords": [
+        "sparking",
+        "transformer",
+        "school",
+        "fire hazard",
+        "electricity"
+      ],
+      "createdAt": "2026-08-10T15:48:31.605Z",
+      "updatedAt": "2026-08-10T17:33:31.605Z",
+      "needsHumanReview": false,
+      "aiClassification": {
+        "category": "Electricity",
+        "subcategory": "Electrical Hazard",
+        "department": "Electrical Engineering & Utilities",
+        "priority": "Critical",
+        "priorityScore": 98,
+        "slaHours": 6,
+        "confidence": 99,
+        "reason": "Immediate sparking high-voltage infrastructure near children.",
+        "needsHumanReview": false
+      }
+    },
+    {
+      "id": "cmp-005",
+      "trackingId": "CIV-2026-8095",
+      "title": "Blocked storm drain causing monsoon waterlogging",
+      "description": "Heavy leaf debris and construction sludge have clogged the main stormwater grate at Liaquatabad No. 10 crossing. Rainwater is standing 1 foot deep, entering nearby shop fronts.",
+      "imageUrl": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Hassan Mehmood",
+      "citizenContact": "+92 301 8881122",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-central",
+        "tehsilId": "liaquatabad",
+        "municipalityId": "karachi-mc-liaquatabad",
+        "wardId": "karachi-w9",
+        "ward": "Ward 9 – Liaquatabad",
+        "area": "Liaquatabad No. 10",
+        "address": "Liaquatabad No. 10 main crossing",
+        "landmark": "Near Nipa Chowrangi"
+      },
+      "category": "Drainage",
+      "subcategory": "Blocked Drain",
+      "assignedDepartment": "Urban Drainage Division",
+      "assignedOfficer": "Officer Sana Malik",
+      "supervisorName": "Supervisor Maryam Farooq",
+      "priority": "High",
+      "priorityScore": 78,
+      "priorityReasoning": "Urban drainage block entering retail establishments, causing business interruption and water damage.",
+      "status": "Resolved",
+      "summary": "Clogged storm drain grate causing commercial waterlogging at Liaquatabad crossing.",
+      "recommendedActions": [
+        "Deploy suction gulley vacuum truck",
+        "Remove debris grate obstruction manually",
+        "Clear downstream culvert"
+      ],
+      "estimatedSLAHours": 24,
+      "imageAnalysis": "Submerged street gutter with dense organic debris covering cast iron catch basin grate.",
+      "detectedKeywords": [
+        "storm drain",
+        "clogged",
+        "waterlogging",
+        "flooding shops"
+      ],
+      "createdAt": "2026-08-08T17:48:31.605Z",
+      "updatedAt": "2026-08-10T11:48:31.605Z",
+      "resolutionNotes": "Suction jetting unit cleared 120kg of silt and leaf debris. Storm drain restored to 100% flow capacity.",
+      "resolutionDate": "2026-08-10T11:48:31.605Z",
+      "afterPhotos": [
+        "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?auto=format&fit=crop&q=80&w=800"
+      ],
+      "citizenFeedback": {
+        "rating": 5,
+        "comment": "Excellent quick response by the drainage crew! Water drained completely in 30 minutes.",
+        "submittedAt": "2026-08-10T13:48:31.605Z"
+      }
+    },
+    {
+      "id": "cmp-006",
+      "trackingId": "CIV-2026-8096",
+      "title": "Fallen heavy tree branch blocking pedestrian park pathway",
+      "description": "A large tree branch broke during yesterday storm and is blocking the main jogging track in Sunset Community Park, DHA Phase 6. Elderly visitors cannot pass.",
+      "imageUrl": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Ayesha Siddiqui",
+      "citizenContact": "+92 314 6789012",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-south",
+        "tehsilId": "clifton",
+        "municipalityId": "karachi-mc-clifton",
+        "wardId": "karachi-w5",
+        "ward": "Ward 5 – DHA",
+        "area": "DHA Phase 6",
+        "address": "Sunset Community Park, DHA Phase 6",
+        "landmark": "Main park gate, off Khayaban-e-Shamsheer"
+      },
+      "category": "Parks & Greenery",
+      "subcategory": "Fallen Tree",
+      "assignedDepartment": "Parks & Horticulture Department",
+      "priority": "Low",
+      "priorityScore": 35,
+      "priorityReasoning": "Non-emergency obstruction on pedestrian walkway inside park, no active damage or immediate life threat.",
+      "status": "Submitted",
+      "summary": "Fallen tree limb blocking park pathway loop.",
+      "recommendedActions": [
+        "Dispatch chainsaw crew to section fallen limb",
+        "Chip wood debris for park mulch",
+        "Perform canopy integrity check on parent tree"
+      ],
+      "estimatedSLAHours": 72,
+      "imageAnalysis": "Large tree branch (~10 inch diameter) lying horizontally across paved 6ft park pathway.",
+      "detectedKeywords": [
+        "fallen tree",
+        "park pathway",
+        "blocked",
+        "branch"
+      ],
+      "createdAt": "2026-08-10T03:48:31.605Z",
+      "updatedAt": "2026-08-10T03:48:31.605Z"
+    },
+    {
+      "id": "cmp-007",
+      "trackingId": "CIV-2026-8097",
+      "title": "Broken footpath slabs outside bus stop endangering pedestrians",
+      "description": "Several concrete footpath slabs on Rashid Minhas Road have cracked and lifted, exposing a 2-foot deep gap right at the NIPA bus stop. Commuters, especially elderly passengers, are at risk of tripping and falling during peak hours.",
+      "imageUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Bilal Hussain",
+      "citizenContact": "+92 300 1122334",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-east",
+        "tehsilId": "gulshan",
+        "municipalityId": "karachi-mc-gulshan",
+        "wardId": "karachi-w6",
+        "ward": "Ward 6 – Gulshan-e-Iqbal",
+        "area": "Gulshan-e-Iqbal Block 13",
+        "address": "Rashid Minhas Road, near NIPA bus stop",
+        "landmark": "Opposite NIPA Chowrangi"
+      },
+      "category": "Roads & Potholes",
+      "subcategory": "Broken Footpath",
+      "assignedDepartment": "Department of Public Works",
+      "assignedOfficer": "Officer Imran Shahid",
+      "supervisorName": "Supervisor Ahmed Khan",
+      "priority": "High",
+      "priorityScore": 74,
+      "priorityReasoning": "Pedestrian trip hazard at high-footfall transit stop, exposed cavity near school crossing route.",
+      "status": "In Progress",
+      "summary": "Lifted footpath slabs creating open cavity beside bus stop platform.",
+      "recommendedActions": [
+        "Cordon off affected slabs with safety barriers",
+        "Break out damaged concrete and re-lay base layer",
+        "Re-cast 12m stretch with high-strength concrete mix"
+      ],
+      "estimatedSLAHours": 24,
+      "imageAnalysis": "Raised and fractured concrete paving slabs with visible open gap along pedestrian walkway edge.",
+      "detectedKeywords": [
+        "broken footpath",
+        "trip hazard",
+        "bus stop",
+        "cracked slabs"
+      ],
+      "createdAt": "2026-08-10T07:48:31.605Z",
+      "updatedAt": "2026-08-10T16:48:31.605Z",
+      "needsHumanReview": false,
+      "aiClassification": {
+        "category": "Roads & Potholes",
+        "subcategory": "Broken Footpath",
+        "department": "Department of Public Works",
+        "priority": "High",
+        "priorityScore": 74,
+        "slaHours": 24,
+        "confidence": 93,
+        "reason": "Clear pedestrian infrastructure damage in transit area.",
+        "needsHumanReview": false
+      },
+      "auditHistory": [
+        {
+          "id": "aud-007a",
+          "user": "AI Engine",
+          "role": "super_admin",
+          "action": "AI Auto-Classified",
+          "ticketId": "CIV-2026-8097",
+          "newValue": "Category: Roads & Potholes (93% Confidence)",
+          "timestamp": "2026-08-10T07:48:31.605Z"
+        },
+        {
+          "id": "aud-007b",
+          "user": "Supervisor Ahmed Khan",
+          "role": "supervisor",
+          "action": "Assigned Officer",
+          "ticketId": "CIV-2026-8097",
+          "newValue": "Officer Imran Shahid",
+          "timestamp": "2026-08-10T09:48:31.605Z"
+        },
+        {
+          "id": "aud-007c",
+          "user": "Officer Imran Shahid",
+          "role": "field_officer",
+          "action": "Started Work",
+          "ticketId": "CIV-2026-8097",
+          "newValue": "Status: In Progress",
+          "timestamp": "2026-08-10T16:48:31.605Z"
+        }
+      ]
+    },
+    {
+      "id": "cmp-008",
+      "trackingId": "CIV-2026-8098",
+      "title": "Sinkhole opening up on Shahrah-e-Noor Jahan main road",
+      "description": "A 4-foot wide sinkhole has formed in the middle of the right lane on Shahrah-e-Noor Jahan after a suspected underground water pipe leak eroded the sub-base. Two cars suffered tyre damage overnight and the hole is growing.",
+      "imageUrl": "https://images.unsplash.com/photo-1563344673-0e9e1ce9d5c6?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Zainab Akhtar",
+      "citizenContact": "+92 345 7788990",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-central",
+        "tehsilId": "north-nazimabad",
+        "municipalityId": "karachi-mc-nn",
+        "wardId": "karachi-w10",
+        "ward": "Ward 10 – North Nazimabad",
+        "area": "North Nazimabad Block B",
+        "address": "Shahrah-e-Noor Jahan, Block B",
+        "landmark": "Near Noman Plaza"
+      },
+      "category": "Roads & Potholes",
+      "subcategory": "Road Damage",
+      "assignedDepartment": "Department of Public Works",
+      "assignedOfficer": "Officer Imran Shahid",
+      "supervisorName": "Supervisor Ahmed Khan",
+      "priority": "Critical",
+      "priorityScore": 90,
+      "priorityReasoning": "Active road collapse in busy through-lane, vehicle damage already reported, risk of further cave-in.",
+      "status": "Assigned",
+      "summary": "Expanding sinkhole in main carriageway caused by pipe-leak sub-base erosion.",
+      "recommendedActions": [
+        "Close affected lane with barriers and divert traffic",
+        "Dispatch engineering survey team to assess cavity extent",
+        "Coordinate with Water & Sanitation Authority to isolate leaking main"
+      ],
+      "estimatedSLAHours": 6,
+      "imageAnalysis": "Large collapsed asphalt crater in road centre with exposed cavity and minor water pooling at base.",
+      "detectedKeywords": [
+        "sinkhole",
+        "road collapse",
+        "pipe leak",
+        "vehicle damage",
+        "lane closure"
+      ],
+      "createdAt": "2026-08-10T14:48:31.605Z",
+      "updatedAt": "2026-08-10T17:18:31.605Z",
+      "needsHumanReview": false,
+      "aiClassification": {
+        "category": "Roads & Potholes",
+        "subcategory": "Road Damage",
+        "department": "Department of Public Works",
+        "priority": "Critical",
+        "priorityScore": 90,
+        "slaHours": 6,
+        "confidence": 95,
+        "reason": "Visible road cavity with vehicle damage reports in busy lane.",
+        "needsHumanReview": false
+      },
+      "auditHistory": [
+        {
+          "id": "aud-008a",
+          "user": "AI Engine",
+          "role": "super_admin",
+          "action": "AI Auto-Classified",
+          "ticketId": "CIV-2026-8098",
+          "newValue": "Category: Roads & Potholes (95% Confidence)",
+          "timestamp": "2026-08-10T14:48:31.605Z"
+        },
+        {
+          "id": "aud-008b",
+          "user": "Supervisor Ahmed Khan",
+          "role": "supervisor",
+          "action": "Assigned Officer",
+          "ticketId": "CIV-2026-8098",
+          "newValue": "Officer Imran Shahid",
+          "timestamp": "2026-08-10T15:48:31.605Z"
+        }
+      ]
+    },
+    {
+      "id": "cmp-009",
+      "trackingId": "CIV-2026-8099",
+      "title": "Streetlight pole leaning over railway crossing",
+      "description": "A streetlight pole on the approach road to the railway crossing has tilted dangerously after last week storm and remains unrepaired. The pole leans over the pedestrian path and could fall onto the tracks.",
+      "imageUrl": "https://images.unsplash.com/photo-1494440129425-2bdf5f4c9bbf?auto=format&fit=crop&q=80&w=800",
+      "citizenName": "Imran Qureshi",
+      "citizenContact": "+92 300 5566778",
+      "location": {
+        "provinceId": "sindh",
+        "divisionId": "karachi-division",
+        "districtId": "karachi-south",
+        "tehsilId": "clifton",
+        "municipalityId": "karachi-mc-clifton",
+        "wardId": "karachi-w5",
+        "ward": "Ward 5 – DHA",
+        "area": "DHA Phase 6",
+        "address": "Approach road to railway crossing, DHA Phase 6",
+        "landmark": "Near railway crossing gate"
+      },
+      "category": "Other",
+      "subcategory": "Streetlight",
+      "assignedDepartment": "General Municipal Services",
+      "assignedOfficer": "Lineman Techn. Adnan Yousaf",
+      "supervisorName": "Supervisor Ahmed Khan",
+      "priority": "Low",
+      "priorityScore": 30,
+      "priorityReasoning": "Leaning pole on approach road; low immediate traffic impact but safety risk if it falls.",
+      "status": "Assigned",
+      "summary": "Tilted streetlight pole pending repair at railway crossing approach.",
+      "recommendedActions": [
+        "Inspect pole base for foundation erosion",
+        "Stabilize with guy wires until replacement",
+        "Schedule pole replacement within the week"
+      ],
+      "estimatedSLAHours": 6,
+      "imageAnalysis": "Utility pole visibly tilted over pedestrian walkway with foundation gap visible.",
+      "detectedKeywords": [
+        "streetlight",
+        "pole",
+        "leaning",
+        "railway crossing"
+      ],
+      "createdAt": "2026-08-09T11:48:31.605Z",
+      "updatedAt": "2026-08-09T13:48:31.605Z",
+      "needsHumanReview": false,
+      "aiClassification": {
+        "category": "Other",
+        "subcategory": "Streetlight",
+        "department": "General Municipal Services",
+        "priority": "Low",
+        "priorityScore": 30,
+        "slaHours": 6,
+        "confidence": 88,
+        "reason": "Utility infrastructure hazard outside standard category mapping.",
+        "needsHumanReview": false
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Water & Leakage",
+      "description": "Freshwater supply pipes, main line bursts, pressure drops, and quality issues",
+      "department": "Water & Sanitation Authority",
+      "defaultPriority": "High",
+      "defaultSLAHours": 24,
+      "status": "Active",
+      "subcategories": [
+        "Pipe Burst",
+        "Water Leakage",
+        "No Water Supply",
+        "Low Water Pressure",
+        "Contaminated Water"
+      ],
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-08-01T10:00:00Z"
+    },
+    {
+      "id": "cat-2",
+      "name": "Roads & Potholes",
+      "description": "Road surface damage, asphalt potholes, sidewalk hazards, and traffic signage",
+      "department": "Department of Public Works",
+      "defaultPriority": "Medium",
+      "defaultSLAHours": 48,
+      "status": "Active",
+      "subcategories": [
+        "Pothole",
+        "Road Damage",
+        "Broken Footpath",
+        "Missing Road Sign"
+      ],
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-08-01T10:00:00Z"
+    },
+    {
+      "id": "cat-3",
+      "name": "Waste Management",
+      "description": "Municipal trash bins, regular waste collection schedules, and illegal dump sites",
+      "department": "Municipal Solid Waste Management",
+      "defaultPriority": "Medium",
+      "defaultSLAHours": 48,
+      "status": "Active",
+      "subcategories": [
+        "Garbage Overflow",
+        "Missed Collection",
+        "Illegal Dumping",
+        "Damaged Garbage Bin"
+      ],
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-08-01T10:00:00Z"
+    },
+    {
+      "id": "cat-4",
+      "name": "Electricity",
+      "description": "Streetlight poles, high-voltage wires, transformer hazards, and local power grids",
+      "department": "Electrical Engineering & Utilities",
+      "defaultPriority": "High",
+      "defaultSLAHours": 24,
+      "status": "Active",
+      "subcategories": [
+        "Broken Streetlight",
+        "Power Line Damage",
+        "Electrical Hazard",
+        "Faulty Streetlight"
+      ],
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-08-01T10:00:00Z"
+    },
+    {
+      "id": "cat-5",
+      "name": "Drainage",
+      "description": "Storm drains, sewer line blockages, street flooding, and wastewater overflow",
+      "department": "Urban Drainage Division",
+      "defaultPriority": "High",
+      "defaultSLAHours": 24,
+      "status": "Active",
+      "subcategories": [
+        "Blocked Drain",
+        "Drain Overflow",
+        "Flooding",
+        "Sewer Issue"
+      ],
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-08-01T10:00:00Z"
+    },
+    {
+      "id": "cat-6",
+      "name": "Parks & Greenery",
+      "description": "Public gardens, fallen trees blocking pathways, playground maintenance",
+      "department": "Parks & Horticulture Department",
+      "defaultPriority": "Low",
+      "defaultSLAHours": 72,
+      "status": "Active",
+      "subcategories": [
+        "Damaged Park",
+        "Fallen Tree",
+        "Broken Park Equipment",
+        "Illegal Cutting"
+      ],
+      "createdAt": "2026-01-10T08:00:00Z",
+      "updatedAt": "2026-08-01T10:00:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud-101",
+      "user": "Supervisor Ahmed Khan",
+      "role": "supervisor",
+      "action": "Category Override",
+      "ticketId": "CIV-2026-8091",
+      "oldValue": "Drainage & Sewage",
+      "newValue": "Water & Leakage",
+      "reason": "Complaint concerns a ruptured clean drinking water main conduit, not a storm drain.",
+      "timestamp": "2026-08-10T14:18:31.605Z",
+      "ipInfo": "192.168.1.45 (Municipal Dispatch)"
+    },
+    {
+      "id": "aud-102",
+      "user": "Supervisor Ahmed Khan",
+      "role": "supervisor",
+      "action": "Priority Change",
+      "ticketId": "CIV-2026-8091",
+      "oldValue": "High",
+      "newValue": "Critical",
+      "reason": "Water loss threatens main commercial grid and residential supply.",
+      "timestamp": "2026-08-10T14:24:31.605Z",
+      "ipInfo": "192.168.1.45 (Municipal Dispatch)"
+    },
+    {
+      "id": "aud-103",
+      "user": "Admin Director Usman Tariq",
+      "role": "municipal_admin",
+      "action": "Officer Assigned",
+      "ticketId": "CIV-2026-8092",
+      "oldValue": "Unassigned",
+      "newValue": "Officer Sana Malik",
+      "reason": "Dispatched closest available field crew in Ward 2.",
+      "timestamp": "2026-08-10T15:48:31.605Z",
+      "ipInfo": "10.0.4.12 (Admin Portal)"
+    },
+    {
+      "id": "aud-104",
+      "user": "Super Admin Hamza Sheikh",
+      "role": "super_admin",
+      "action": "SLA Rule Updated",
+      "oldValue": "Critical: 12 Hours",
+      "newValue": "Critical: 6 Hours",
+      "reason": "Emergency response protocol update approved by council.",
+      "timestamp": "2026-08-09T17:48:31.605Z",
+      "ipInfo": "10.0.0.1 (System Console)"
+    }
+  ],
+  "generatedAt": "2026-08-10T17:48:31.609Z"
+}

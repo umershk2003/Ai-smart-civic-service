@@ -1,0 +1,6 @@
+# Contract test suite (backend/tests) — Python 3.11+
+# Setup: python -m venv --system-site-packages .venv
+#        .venv/Scripts/python.exe -m pip install -r backend/requirements-dev.txt
+pytest>=8,<10
+requests>=2.32
+httpx>=0.28

@@ -1,0 +1,11 @@
+# FastAPI backend runtime deps (Python 3.11+)
+# Setup: python -m venv --system-site-packages .venv
+#        .venv/Scripts/python.exe -m pip install -r backend/requirements.txt
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+google-genai>=1.0
+python-dotenv>=1.0
+sqlalchemy>=2.0
+alembic>=1.13
+PyJWT>=2.8
