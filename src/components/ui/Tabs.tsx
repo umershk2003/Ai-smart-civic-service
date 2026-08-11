@@ -38,7 +38,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs, activeId, onChange, label }) =
       <div
         role="tablist"
         aria-label={label}
-        className="inline-flex w-full max-w-full items-center gap-1 overflow-x-auto rounded-xl bg-slate-100 p-1 sm:w-auto"
+        className="inline-flex w-full max-w-full items-center gap-1 overflow-x-auto rounded-xl bg-slate-800/60 p-1 ring-1 ring-inset ring-white/10 sm:w-auto"
       >
         {tabs.map((tab, i) => {
           const selected = tab.id === activeId;
@@ -59,8 +59,8 @@ export const Tabs: React.FC<TabsProps> = ({ tabs, activeId, onChange, label }) =
               className={[
                 'flex-1 whitespace-nowrap rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 cursor-pointer sm:flex-none',
                 selected
-                  ? 'bg-white text-slate-900 shadow-card'
-                  : 'text-slate-500 hover:text-slate-800',
+                  ? 'bg-slate-700 text-white shadow-card ring-1 ring-inset ring-slate-600'
+                  : 'text-slate-400 hover:text-slate-100',
               ].join(' ')}
             >
               {tab.label}

@@ -189,8 +189,8 @@ export const Hero: React.FC<HeroProps> = ({ onSignIn, onSeeHowItWorks }) => {
     <section id="top" className="relative overflow-hidden">
       {/* Soft ambient background */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute -top-32 left-1/2 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-primary-100/60 blur-3xl" />
-        <div className="absolute right-[-180px] top-40 h-72 w-72 rounded-full bg-teal-100/50 blur-3xl" />
+        <div className="absolute -top-32 left-1/2 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-primary-500/10 blur-3xl" />
+        <div className="absolute right-[-180px] top-40 h-72 w-72 rounded-full bg-teal-500/10 blur-3xl" />
         <div className="absolute inset-0 bg-dot-grid opacity-40 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]" />
       </div>
 
@@ -201,18 +201,18 @@ export const Hero: React.FC<HeroProps> = ({ onSignIn, onSeeHowItWorks }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: 'easeOut' }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3.5 py-1.5 text-xs font-semibold text-primary-700 ring-1 ring-inset ring-primary-200">
+          <span className="inline-flex items-center gap-2 rounded-full bg-primary-500/15 px-3.5 py-1.5 text-xs font-semibold text-primary-300 ring-1 ring-inset ring-primary-500/30">
             <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
             AI-powered municipal operations
           </span>
 
-          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.6rem]">
+          <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[3.6rem]">
             Every civic issue,
             <br />
-            <span className="text-primary-600">resolved faster.</span>
+            <span className="text-primary-400">resolved faster.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg">
             Report a pothole, a burst pipe, or a broken streetlight — our AI classifies,
             prioritizes, and routes it to the right municipal team within seconds. Track every
             ticket to resolution, with SLA deadlines your team can actually meet.
@@ -225,7 +225,7 @@ export const Hero: React.FC<HeroProps> = ({ onSignIn, onSeeHowItWorks }) => {
             <Button
               size="lg"
               variant="outline"
-              leftIcon={<PlayCircle className="h-5 w-5 text-primary-600" />}
+              leftIcon={<PlayCircle className="h-5 w-5 text-primary-400" />}
               onClick={onSeeHowItWorks}
             >
               See how it works
@@ -254,14 +254,14 @@ export const Hero: React.FC<HeroProps> = ({ onSignIn, onSeeHowItWorks }) => {
                     <Star key={i} className="h-3 w-3 fill-current" aria-hidden="true" />
                   ))}
                 </div>
-                <p className="mt-0.5 font-medium text-slate-600">
-                  Trusted by <span className="font-bold text-slate-900">14 municipal teams</span>
+                <p className="mt-0.5 font-medium text-slate-400">
+                  Trusted by <span className="font-bold text-white">14 municipal teams</span>
                 </p>
               </div>
             </div>
-            <div className="hidden h-8 w-px bg-slate-200 sm:block" aria-hidden="true" />
-            <div className="flex items-center gap-2 text-xs font-medium text-slate-600">
-              <ShieldCheck className="h-4 w-4 text-primary-600" aria-hidden="true" />
+            <div className="hidden h-8 w-px bg-slate-700 sm:block" aria-hidden="true" />
+            <div className="flex items-center gap-2 text-xs font-medium text-slate-400">
+              <ShieldCheck className="h-4 w-4 text-primary-400" aria-hidden="true" />
               SOC 2-ready · Data encrypted at rest
             </div>
           </div>
@@ -274,7 +274,7 @@ export const Hero: React.FC<HeroProps> = ({ onSignIn, onSeeHowItWorks }) => {
           transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
           className="relative"
         >
-          <div className="relative rounded-2xl bg-slate-950 p-5 shadow-popover ring-1 ring-slate-900/10 sm:p-6">
+          <div className="relative rounded-2xl bg-slate-900/80 p-5 shadow-popover ring-1 ring-white/10 sm:p-6">
             {/* Window chrome */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1.5">
@@ -376,14 +376,14 @@ export const Hero: React.FC<HeroProps> = ({ onSignIn, onSeeHowItWorks }) => {
             initial={{ opacity: 0, x: 16 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
-            className="absolute -right-3 -top-5 hidden items-center gap-2 rounded-xl bg-white px-3.5 py-2.5 shadow-popover ring-1 ring-slate-200 sm:flex"
+            className="absolute -right-3 -top-5 hidden items-center gap-2 rounded-xl bg-slate-800 px-3.5 py-2.5 shadow-popover ring-1 ring-white/10 sm:flex"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-100 text-primary-700">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-500/15 text-primary-300">
               <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
             </span>
             <div className="text-left">
-              <p className="text-xs font-bold text-slate-900">AI classified</p>
-              <p className="text-[10px] text-slate-500">{data.aiChip}</p>
+              <p className="text-xs font-bold text-white">AI classified</p>
+              <p className="text-[10px] text-slate-400">{data.aiChip}</p>
             </div>
           </motion.div>
         </motion.div>

@@ -29,8 +29,8 @@ export const MarketingNavbar: React.FC<MarketingNavbarProps> = ({ onSignIn }) =>
       className={[
         'sticky top-0 z-40 border-b transition-all duration-300',
         scrolled
-          ? 'border-slate-200 bg-white/85 backdrop-blur-lg shadow-card'
-          : 'border-transparent bg-white/60 backdrop-blur-md',
+          ? 'border-slate-800 bg-slate-950/85 backdrop-blur-lg shadow-card'
+          : 'border-transparent bg-slate-950/60 backdrop-blur-md',
       ].join(' ')}
     >
       <nav
@@ -42,8 +42,8 @@ export const MarketingNavbar: React.FC<MarketingNavbarProps> = ({ onSignIn }) =>
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white shadow-sm shadow-primary-600/30">
             <Building2 className="h-5 w-5" aria-hidden="true" />
           </span>
-          <span className="text-[15px] font-bold tracking-tight text-slate-900">
-            AI Smart <span className="text-primary-600">Civic</span>
+          <span className="text-[15px] font-bold tracking-tight text-white">
+            AI Smart <span className="text-primary-400">Civic</span>
           </span>
         </a>
 
@@ -53,7 +53,7 @@ export const MarketingNavbar: React.FC<MarketingNavbarProps> = ({ onSignIn }) =>
             <li key={link.href}>
               <a
                 href={link.href}
-                className="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900"
+                className="rounded-lg px-3.5 py-2 text-sm font-medium text-slate-400 transition-colors hover:bg-slate-800/60 hover:text-white"
               >
                 {link.label}
               </a>
@@ -74,7 +74,7 @@ export const MarketingNavbar: React.FC<MarketingNavbarProps> = ({ onSignIn }) =>
         {/* Mobile toggle */}
         <button
           type="button"
-          className="rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 xl:hidden cursor-pointer"
+          className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-slate-800/60 hover:text-white xl:hidden cursor-pointer"
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
@@ -86,14 +86,14 @@ export const MarketingNavbar: React.FC<MarketingNavbarProps> = ({ onSignIn }) =>
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div id="mobile-menu" className="border-t border-slate-200 bg-white px-4 pb-6 pt-3 xl:hidden">
+        <div id="mobile-menu" className="border-t border-slate-800 bg-slate-950 px-4 pb-6 pt-3 xl:hidden">
           <ul className="space-y-1">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100"
+                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-800/60"
                 >
                   {link.label}
                 </a>

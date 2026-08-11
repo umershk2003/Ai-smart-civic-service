@@ -16,11 +16,11 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     'bg-primary-600 text-white shadow-sm hover:bg-primary-700 active:bg-primary-800 disabled:bg-primary-300',
   secondary:
-    'bg-primary-50 text-primary-700 ring-1 ring-inset ring-primary-200 hover:bg-primary-100 active:bg-primary-200 disabled:bg-primary-50 disabled:text-primary-400',
+    'bg-primary-500/15 text-primary-300 ring-1 ring-inset ring-primary-500/30 hover:bg-primary-500/25 active:bg-primary-500/30 disabled:bg-primary-500/5 disabled:text-primary-500/40',
   outline:
-    'bg-white text-slate-700 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 hover:text-slate-900 active:bg-slate-100 disabled:bg-slate-50 disabled:text-slate-400',
+    'bg-transparent text-slate-200 ring-1 ring-inset ring-slate-700 hover:bg-white/10 hover:text-white active:bg-white/15 disabled:text-slate-500',
   ghost:
-    'bg-transparent text-slate-600 hover:bg-slate-100 hover:text-slate-900 active:bg-slate-200 disabled:text-slate-400',
+    'bg-transparent text-slate-300 hover:bg-white/10 hover:text-white active:bg-white/15 disabled:text-slate-500',
   dark: 'bg-slate-900 text-white shadow-sm hover:bg-slate-800 active:bg-slate-950 disabled:bg-slate-400',
 };
 
@@ -48,7 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={disabled || loading}
       className={[
         'inline-flex items-center justify-center rounded-xl font-semibold transition-all duration-200',
-        'focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2',
+        'focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950',
         'disabled:cursor-not-allowed active:scale-[0.98] cursor-pointer select-none',
         variantClasses[variant],
         sizeClasses[size],

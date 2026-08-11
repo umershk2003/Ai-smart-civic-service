@@ -88,15 +88,15 @@ function StepList({ steps }: { steps: Step[] }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: i * 0.1, ease: 'easeOut' }}
         >
-          <Card className="relative h-full">
-            <span className="absolute right-5 top-5 text-4xl font-black leading-none text-slate-100">
+          <Card dark className="relative h-full">
+            <span className="absolute right-5 top-5 text-4xl font-black leading-none text-slate-800">
               {i + 1}
             </span>
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-50 text-primary-700 ring-1 ring-inset ring-primary-200">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-500/15 text-primary-300 ring-1 ring-inset ring-primary-500/30">
               <step.icon className="h-5 w-5" aria-hidden="true" />
             </span>
-            <h3 className="mt-4 text-base font-bold tracking-tight text-slate-900">{step.title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600">{step.description}</p>
+            <h3 className="mt-4 text-base font-bold tracking-tight text-white">{step.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-400">{step.description}</p>
           </Card>
         </motion.li>
       ))}
@@ -113,7 +113,7 @@ export const HowItWorks: React.FC = () => {
       eyebrow="How it works"
       title="One platform, three perspectives"
       description="Citizens get transparency. Teams get triage. Leaders get control. The same tickets flow through every view."
-      className="bg-slate-50/70"
+      className="bg-slate-900/40"
     >
       <Tabs tabs={TABS} activeId={activeTab} onChange={setActiveTab} label="Choose your perspective" />
     </Section>

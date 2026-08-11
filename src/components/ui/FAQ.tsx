@@ -17,7 +17,7 @@ export const FAQ: React.FC<FAQProps> = ({ items, label = 'Frequently asked quest
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="mx-auto max-w-3xl divide-y divide-slate-200 rounded-2xl bg-white shadow-card ring-1 ring-inset ring-slate-200">
+    <div className="mx-auto max-w-3xl divide-y divide-slate-800 rounded-2xl bg-slate-900/70 shadow-card ring-1 ring-inset ring-white/10">
       {items.map((item, i) => {
         const isOpen = openIndex === i;
         return (
@@ -31,12 +31,12 @@ export const FAQ: React.FC<FAQProps> = ({ items, label = 'Frequently asked quest
                 onClick={() => setOpenIndex(isOpen ? null : i)}
                 className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left cursor-pointer"
               >
-                <span className="text-sm font-semibold text-slate-900 sm:text-base">{item.question}</span>
+                <span className="text-sm font-semibold text-slate-100 sm:text-base">{item.question}</span>
                 <ChevronDown
                   aria-hidden="true"
                   className={[
                     'h-4 w-4 shrink-0 text-slate-400 transition-transform duration-300',
-                    isOpen ? 'rotate-180 text-primary-600' : '',
+                    isOpen ? 'rotate-180 text-primary-400' : '',
                   ].join(' ')}
                 />
               </button>
@@ -53,7 +53,7 @@ export const FAQ: React.FC<FAQProps> = ({ items, label = 'Frequently asked quest
                   transition={{ duration: 0.25, ease: 'easeInOut' }}
                   className="overflow-hidden"
                 >
-                  <p className="px-6 pb-6 text-sm leading-relaxed text-slate-600">{item.answer}</p>
+                  <p className="px-6 pb-6 text-sm leading-relaxed text-slate-400">{item.answer}</p>
                 </motion.div>
               )}
             </AnimatePresence>

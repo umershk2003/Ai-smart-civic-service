@@ -56,23 +56,23 @@ export const Testimonials: React.FC = () => {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.45, delay: i * 0.1, ease: 'easeOut' }}
           >
-            <Card hover className="flex h-full flex-col">
-              <Quote className="h-6 w-6 text-primary-200" aria-hidden="true" />
+            <Card hover dark className="flex h-full flex-col">
+              <Quote className="h-6 w-6 text-primary-400/40" aria-hidden="true" />
               <div className="mt-3 flex items-center gap-0.5 text-amber-500" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, s) => (
                   <Star key={s} className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
                 ))}
               </div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-700">“{t.quote}”</p>
-              <div className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-300">“{t.quote}”</p>
+              <div className="mt-6 flex items-center gap-3 border-t border-slate-800 pt-5">
                 <span
                   className={`flex h-10 w-10 items-center justify-center rounded-full text-xs font-bold text-white ${t.color}`}
                 >
                   {t.initials}
                 </span>
                 <div>
-                  <p className="text-sm font-bold text-slate-900">{t.name}</p>
-                  <p className="text-xs text-slate-500">{t.role}</p>
+                  <p className="text-sm font-bold text-white">{t.name}</p>
+                  <p className="text-xs text-slate-400">{t.role}</p>
                 </div>
               </div>
             </Card>

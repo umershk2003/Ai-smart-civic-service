@@ -29,17 +29,17 @@ export const Section: React.FC<SectionProps> = ({
         {(eyebrow || title || description) && (
           <div className={isCenter ? 'mx-auto max-w-2xl text-center' : 'max-w-2xl'}>
             {eyebrow && (
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary-600">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary-400">
                 {eyebrow}
               </p>
             )}
             {title && (
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 {title}
               </h2>
             )}
             {description && (
-              <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+              <p className="mt-4 text-base leading-relaxed text-slate-400 sm:text-lg">
                 {description}
               </p>
             )}

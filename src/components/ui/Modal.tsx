@@ -103,16 +103,16 @@ export const Modal: React.FC<ModalProps> = ({
             exit={{ opacity: 0, y: 24, scale: 0.98 }}
             transition={{ duration: 0.22, ease: 'easeOut' }}
             className={[
-              'relative w-full rounded-2xl bg-white shadow-popover ring-1 ring-slate-900/10',
+              'relative w-full rounded-2xl bg-slate-900 shadow-popover ring-1 ring-white/10',
               'max-h-[90vh] overflow-y-auto outline-none',
               maxWidthClasses[maxWidth],
             ].join(' ')}
           >
-            <div className="flex items-start justify-between gap-4 border-b border-slate-100 px-6 py-5">
+            <div className="flex items-start justify-between gap-4 border-b border-slate-800 px-6 py-5">
               <div>
-                <h2 className="text-lg font-bold tracking-tight text-slate-900">{title}</h2>
+                <h2 className="text-lg font-bold tracking-tight text-white">{title}</h2>
                 {description && (
-                  <p id={descId} className="mt-1 text-sm text-slate-500">
+                  <p id={descId} className="mt-1 text-sm text-slate-400">
                     {description}
                   </p>
                 )}
@@ -121,7 +121,7 @@ export const Modal: React.FC<ModalProps> = ({
                 type="button"
                 onClick={onClose}
                 aria-label="Close dialog"
-                className="rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700 cursor-pointer"
+                className="rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-800 hover:text-white cursor-pointer"
               >
                 <X className="h-5 w-5" />
               </button>

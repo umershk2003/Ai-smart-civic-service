@@ -37,21 +37,21 @@ interface LandingPageProps {
 
 const getRoleIcon = (r: ExtendedUserRole) => {
   switch (r) {
-    case 'citizen': return <User className="h-3.5 w-3.5 text-emerald-600" />;
-    case 'field_officer': return <HardHat className="h-3.5 w-3.5 text-amber-600" />;
-    case 'supervisor': return <ShieldAlert className="h-3.5 w-3.5 text-sky-600" />;
-    case 'municipal_admin': return <Building2 className="h-3.5 w-3.5 text-violet-600" />;
-    case 'super_admin': return <KeyRound className="h-3.5 w-3.5 text-rose-600" />;
+    case 'citizen': return <User className="h-3.5 w-3.5 text-emerald-400" />;
+    case 'field_officer': return <HardHat className="h-3.5 w-3.5 text-amber-400" />;
+    case 'supervisor': return <ShieldAlert className="h-3.5 w-3.5 text-sky-400" />;
+    case 'municipal_admin': return <Building2 className="h-3.5 w-3.5 text-violet-400" />;
+    case 'super_admin': return <KeyRound className="h-3.5 w-3.5 text-rose-400" />;
   }
 };
 
 const getRoleBadgeStyle = (r: ExtendedUserRole) => {
   switch (r) {
-    case 'citizen': return 'bg-emerald-50 text-emerald-700 ring-emerald-200';
-    case 'field_officer': return 'bg-amber-50 text-amber-700 ring-amber-200';
-    case 'supervisor': return 'bg-sky-50 text-sky-700 ring-sky-200';
-    case 'municipal_admin': return 'bg-violet-50 text-violet-700 ring-violet-200';
-    case 'super_admin': return 'bg-rose-50 text-rose-700 ring-rose-200';
+    case 'citizen': return 'bg-emerald-500/15 text-emerald-300 ring-emerald-500/30';
+    case 'field_officer': return 'bg-amber-500/15 text-amber-300 ring-amber-500/30';
+    case 'supervisor': return 'bg-sky-500/15 text-sky-300 ring-sky-500/30';
+    case 'municipal_admin': return 'bg-violet-500/15 text-violet-300 ring-violet-500/30';
+    case 'super_admin': return 'bg-rose-500/15 text-rose-300 ring-rose-500/30';
   }
 };
 
@@ -185,7 +185,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSignInSuccess }) => 
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
       <MarketingNavbar onSignIn={() => openAuth('signin')} />
       <main>
         <Hero onSignIn={() => openAuth('signin')} onSeeHowItWorks={() => scrollTo('how-it-works')} />
@@ -210,7 +210,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSignInSuccess }) => 
         {error && (
           <div
             role="alert"
-            className="mb-5 flex items-start gap-2.5 rounded-xl bg-red-50 p-3.5 text-sm text-red-700 ring-1 ring-inset ring-red-200"
+            className="mb-5 flex items-start gap-2.5 rounded-xl bg-red-500/10 p-3.5 text-sm text-red-300 ring-1 ring-inset ring-red-500/30"
           >
             <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
             <p className="font-medium">{error}</p>
@@ -219,7 +219,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onSignInSuccess }) => 
         {success && (
           <div
             role="status"
-            className="mb-5 flex items-start gap-2.5 rounded-xl bg-emerald-50 p-3.5 text-sm text-emerald-700 ring-1 ring-inset ring-emerald-200"
+            className="mb-5 flex items-start gap-2.5 rounded-xl bg-emerald-500/10 p-3.5 text-sm text-emerald-300 ring-1 ring-inset ring-emerald-500/30"
           >
             <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
             <p className="font-medium">{success}</p>
@@ -279,11 +279,11 @@ const SignInForm: React.FC<SignInFormProps> = ({
         autoComplete="email"
       />
       <div className="space-y-1.5">
-        <label className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
-          Password <span className="ml-0.5 text-primary-600">*</span>
+        <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
+          Password <span className="ml-0.5 text-primary-400">*</span>
         </label>
         <div className="relative">
-          <span aria-hidden="true" className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
+          <span aria-hidden="true" className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500">
             <Lock className="h-4 w-4" />
           </span>
           <input
@@ -293,13 +293,13 @@ const SignInForm: React.FC<SignInFormProps> = ({
             placeholder="••••••••"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-11 w-full rounded-xl border-0 bg-white pl-10 pr-11 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 transition-shadow placeholder:text-slate-400 focus:ring-2 focus:ring-primary-500"
+            className="h-11 w-full rounded-xl border-0 bg-slate-800/70 pl-10 pr-11 text-sm text-white shadow-sm ring-1 ring-inset ring-slate-700 transition-shadow placeholder:text-slate-500 focus:ring-2 focus:ring-primary-500"
           />
           <button
             type="button"
             aria-label={showPassword ? 'Hide password' : 'Show password'}
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded-md p-1 text-slate-400 transition-colors hover:text-slate-700 cursor-pointer"
+            className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded-md p-1 text-slate-400 transition-colors hover:text-white cursor-pointer"
           >
             {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           </button>
@@ -311,8 +311,8 @@ const SignInForm: React.FC<SignInFormProps> = ({
       </Button>
     </form>
 
-    <div className="mt-6 border-t border-slate-100 pt-5">
-      <p className="mb-3 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500">
+    <div className="mt-6 border-t border-slate-800 pt-5">
+      <p className="mb-3 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
         <Sparkles className="h-3.5 w-3.5 text-amber-500" aria-hidden="true" />
         Explore with a demo account
       </p>
@@ -324,14 +324,14 @@ const SignInForm: React.FC<SignInFormProps> = ({
             aria-label={`Sign in as demo account ${acc.name}, role ${acc.role.replace('_', ' ')}`}
             onClick={() => onQuickDemo(acc.email, acc.password, acc.role)}
             disabled={isLoading}
-            className="group flex w-full items-center justify-between rounded-xl p-2.5 text-left ring-1 ring-inset ring-slate-200 transition-all hover:bg-slate-50 hover:ring-primary-300 disabled:opacity-60 cursor-pointer"
+            className="group flex w-full items-center justify-between rounded-xl p-2.5 text-left ring-1 ring-inset ring-slate-700 transition-all hover:bg-slate-800/60 hover:ring-primary-500/50 disabled:opacity-60 cursor-pointer"
           >
             <span className="flex items-center gap-2.5">
-              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-50 ring-1 ring-inset ring-slate-200">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-800 ring-1 ring-inset ring-slate-700">
                 {getRoleIcon(acc.role)}
               </span>
               <span>
-                <span className="block text-sm font-semibold text-slate-800 group-hover:text-primary-700">
+                <span className="block text-sm font-semibold text-slate-100 group-hover:text-primary-300">
                   {acc.name}
                 </span>
                 <span className={`mt-0.5 inline-block rounded-full px-1.5 py-0.5 text-[10px] font-bold capitalize ring-1 ring-inset ${getRoleBadgeStyle(acc.role)}`}>
@@ -339,7 +339,7 @@ const SignInForm: React.FC<SignInFormProps> = ({
                 </span>
               </span>
             </span>
-            <span className="text-xs font-semibold text-primary-600 opacity-0 transition-opacity group-hover:opacity-100">
+            <span className="text-xs font-semibold text-primary-400 opacity-0 transition-opacity group-hover:opacity-100">
               Login →
             </span>
           </button>
@@ -400,11 +400,11 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
       autoComplete="email"
     />
     <div className="space-y-1.5">
-      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
-        Password <span className="ml-0.5 text-primary-600">*</span>
+      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
+        Password <span className="ml-0.5 text-primary-400">*</span>
       </label>
       <div className="relative">
-        <span aria-hidden="true" className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
+        <span aria-hidden="true" className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500">
           <Lock className="h-4 w-4" />
         </span>
         <input
@@ -415,27 +415,27 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
           placeholder="At least 6 characters"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="h-11 w-full rounded-xl border-0 bg-white pl-10 pr-11 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 transition-shadow placeholder:text-slate-400 focus:ring-2 focus:ring-primary-500"
+          className="h-11 w-full rounded-xl border-0 bg-slate-800/70 pl-10 pr-11 text-sm text-white shadow-sm ring-1 ring-inset ring-slate-700 transition-shadow placeholder:text-slate-500 focus:ring-2 focus:ring-primary-500"
         />
         <button
           type="button"
           aria-label={showPassword ? 'Hide password' : 'Show password'}
           onClick={() => setShowPassword(!showPassword)}
-          className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded-md p-1 text-slate-400 transition-colors hover:text-slate-700 cursor-pointer"
+          className="absolute right-2.5 top-1/2 -translate-y-1/2 rounded-md p-1 text-slate-400 transition-colors hover:text-white cursor-pointer"
         >
           {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
         </button>
       </div>
     </div>
     <div className="space-y-1.5">
-      <label htmlFor="register-role" className="block text-xs font-semibold uppercase tracking-wider text-slate-600">
+      <label htmlFor="register-role" className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
         I am a…
       </label>
       <select
         id="register-role"
         value={role}
         onChange={(e) => setRole(e.target.value as ExtendedUserRole)}
-        className="h-11 w-full cursor-pointer rounded-xl border-0 bg-white px-3.5 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 transition-shadow focus:ring-2 focus:ring-primary-500"
+        className="h-11 w-full cursor-pointer rounded-xl border-0 bg-slate-800/70 px-3.5 text-sm text-white shadow-sm ring-1 ring-inset ring-slate-700 transition-shadow focus:ring-2 focus:ring-primary-500"
       >
         <option value="citizen">Citizen / Resident</option>
         <option value="field_officer">Field Officer</option>
@@ -448,7 +448,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     <Button type="submit" fullWidth loading={isLoading} rightIcon={<ArrowRight className="h-4 w-4" />}>
       {isLoading ? 'Creating account…' : 'Create account'}
     </Button>
-    <p className="text-center text-xs text-slate-500">
+    <p className="text-center text-xs text-slate-400">
       By continuing you agree to our Terms of Service and Privacy Policy.
     </p>
   </form>
